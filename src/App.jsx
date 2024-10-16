@@ -3,7 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import './App.css';
 import PhotoGallery from './pages/Photo-Gallery';
-import Photo from './pages/photo';
+import Photo from './pages/Photo';
 
 const router = createBrowserRouter([
   {
