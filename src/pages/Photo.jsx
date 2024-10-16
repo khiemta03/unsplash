@@ -20,7 +20,6 @@ function Photo() {
                 });
 
                 setPhoto(response.data)
-                console.log(response.data)
             } catch (error) {
                 console.error(error);
             }
@@ -28,18 +27,6 @@ function Photo() {
         };
         fetchPhotos();
     }, [id]);
-
-    useEffect(() => {
-        const onScroll = () => {
-            if (window.innerHeight + window.scrollY >= window.document.body.offsetHeight) {
-                setPage((prevPage) => prevPage + 1)
-            }
-        }
-
-        window.addEventListener('scroll', onScroll)
-
-        return () => window.removeEventListener('scroll', onScroll)
-    }, []);
 
     return (
         <>
